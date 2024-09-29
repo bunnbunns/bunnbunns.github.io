@@ -5,14 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="../favicon.ico">
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 	<title>Assignment 4</title>
 </head>
 <body>
 	<h1>Assignment 4</h1>
 	<div class="grid-container">
-		<ul class="navbox">
-			<li class="title">Menu</li>
-			<li class="active"><a href="#coffee">Coffee</a></li>
+		<ul id="navbox">
+			<li class="title" onclick="openCloseNav()">Menu</li>
+			<li><a href="#coffee">Coffee</a></li>
 			<li><a href="#tea">Tea</a></li>
 			<li><a href="#cookie">Cookie</a></li>
 			<li><a href="#sandwich">Sandwich</a></li>
@@ -21,42 +22,55 @@
 			<div style="position:absolute;z-index:-1;right:-7em;top:-7em;">
 				<img src="images/shells.png" style="width:500px;"/>
 			</div>
-			<div class="image-container">
-				<img src="images/coffee.png" />
+			<div class="content-row r">
+				<div class="image-container">
+					<img src="images/coffee.png" />
+				</div>
+				<div class="content-block" id="coffee">
+					<h3>Coffee</h3>
+					<p>Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.</p>
+					<p>Coffee production begins when the seeds of the Coffea plant's fruits (coffee cherries) are separated to produce unroasted green coffee beans. The beans are roasted and then ground into fine particles. Coffee is brewed from the ground roasted beans, which are typically steeped in hot water before being filtered out. It is usually served hot, although chilled or iced coffee is common. Coffee can be prepared and presented in a variety of ways (e.g., espresso, French press, caffè latte, or already-brewed canned coffee). Sugar, sugar substitutes, milk, and cream are often added to mask the bitter taste or enhance the flavor. There are also various coffee substitutes.</p>
+				</div>
 			</div>
-			<div class="content-block" id="coffee">
-				<h3>Coffee</h3>
-				<p>Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.</p>
-				<p>Coffee production begins when the seeds of the Coffea plant's fruits (coffee cherries) are separated to produce unroasted green coffee beans. The beans are roasted and then ground into fine particles. Coffee is brewed from the ground roasted beans, which are typically steeped in hot water before being filtered out. It is usually served hot, although chilled or iced coffee is common. Coffee can be prepared and presented in a variety of ways (e.g., espresso, French press, caffè latte, or already-brewed canned coffee). Sugar, sugar substitutes, milk, and cream are often added to mask the bitter taste or enhance the flavor. There are also various coffee substitutes.</p>
+			
+			<div class="content-row l">
+				<div class="image-container">
+					<img src="images/tea.jpg" />
+				</div>
+				<div class="content-block" id="tea">
+					<h3>Tea</h3>
+					<p>Tea is an aromatic beverage prepared by pouring hot or boiling water over cured or fresh leaves of Camellia sinensis, an evergreen shrub native to East Asia which probably originated in the borderlands of southwestern China and northern Myanmar.</p>
+					<p>Tea is also made, but rarely, from the leaves of Camellia taliensis. After plain water, tea is the most widely consumed drink in the world. There are many different types of tea; some have a cooling, slightly bitter, and astringent flavour, while others have profiles that include sweet, nutty, floral, or grassy notes. Tea has a stimulating effect in humans, primarily due to its caffeine content.</p>
+				</div>
 			</div>
-			<div class="content-block" id="tea">
-				<h3>Tea</h3>
-				<p>Tea is an aromatic beverage prepared by pouring hot or boiling water over cured or fresh leaves of Camellia sinensis, an evergreen shrub native to East Asia which probably originated in the borderlands of southwestern China and northern Myanmar.</p>
-				<p>Tea is also made, but rarely, from the leaves of Camellia taliensis. After plain water, tea is the most widely consumed drink in the world. There are many different types of tea; some have a cooling, slightly bitter, and astringent flavour, while others have profiles that include sweet, nutty, floral, or grassy notes. Tea has a stimulating effect in humans, primarily due to its caffeine content.</p>
+
+			<div class="content-row r">
+				<div class="image-container">
+					<img src="images/cookie.jpg" />
+				</div>
+				<div class="content-block" id="cookie">
+					<h3>Cookie</h3>
+					<p>Cookies are most commonly baked until crisp or else for just long enough to ensure a soft interior. Other types of cookies are not baked at all, such as varieties of peanut butter cookies that use solidified chocolate rather than set eggs and wheat gluten as a binder.</p>
+					<p>Cookies are produced in a wide variety of styles, using an array of ingredients including sugars, spices, chocolate, butter, peanut butter, nuts, or dried fruits.</p>
+				</div>
 			</div>
-			<div class="image-container">
-				<img src="images/tea.jpg" />
+
+			<div class="content-row l">
+				<div class="image-container">
+					<img src="images/sandwich.jpg" />
+				</div>
+				<div class="content-block" id="sandwich">
+					<h3>Sandwich</h3>
+					<p>A club sandwich or clubhouse sandwich, is a sandwich consisting of bread (traditionally toasted), sliced cooked poultry, fried bacon, lettuce, tomato, and mayonnaise. It is often cut into quarters or halves and held together by cocktail sticks. Modern versions frequently have two layers which are separated by an additional slice of bread.</p>
+					<p>The sandwich appeared on U.S. restaurant menus as early as 1899. The earliest reference to the sandwich in published fiction is from Conversations of a Chorus Girl, a 1903 book by Ray Cardell. Historically, club sandwiches featured slices of chicken, but with time, turkey has become increasingly common. An 1897 recipe has three layers, with the chicken and ham separated not by a slice of bread, but by a lettuce leaf.</p>
+				</div>
 			</div>
-			<div class="image-container">
-				<img src="images/cookie.jpg" />
-			</div>
-			<div class="content-block" id="cookie">
-				<h3>Cookie</h3>
-				<p>Cookies are most commonly baked until crisp or else for just long enough to ensure a soft interior. Other types of cookies are not baked at all, such as varieties of peanut butter cookies that use solidified chocolate rather than set eggs and wheat gluten as a binder.</p>
-				<p>Cookies are produced in a wide variety of styles, using an array of ingredients including sugars, spices, chocolate, butter, peanut butter, nuts, or dried fruits.</p>
-			</div>
-			<div class="content-block" id="sandwich">
-				<h3>Sandwich</h3>
-				<p>A club sandwich or clubhouse sandwich, is a sandwich consisting of bread (traditionally toasted), sliced cooked poultry, fried bacon, lettuce, tomato, and mayonnaise. It is often cut into quarters or halves and held together by cocktail sticks. Modern versions frequently have two layers which are separated by an additional slice of bread.</p>
-				<p>The sandwich appeared on U.S. restaurant menus as early as 1899. The earliest reference to the sandwich in published fiction is from Conversations of a Chorus Girl, a 1903 book by Ray Cardell. Historically, club sandwiches featured slices of chicken, but with time, turkey has become increasingly common. An 1897 recipe has three layers, with the chicken and ham separated not by a slice of bread, but by a lettuce leaf.</p>
-			</div>
-			<div class="image-container">
-				<img src="images/sandwich.jpg" />
-			</div>
+
 			<div style="position:absolute;z-index:-1;left:-7em;bottom:-7em;">
 				<img src="images/shells.png" style="width:500px;transform:rotate(180deg);"/>
 			</div>
 		</div>
 	</div>
+	
 	<footer><img src="../favicon.ico" /><br/>Lily Li ©2024</footer>
 </body>
