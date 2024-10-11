@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+:root {
+	--background-color: #f0ebe2;
+	--accent-color: #e1d8d3;
+	--text-color: #3a3333;
+}
+
+body {
+	font-family: "Gowun Batang", serif;
+	color: var(--text-color);
+	background-color: var(--accent-color);
+	background-size: 40px 40px;
+  background-image:
+	linear-gradient(to right, var(--background-color) 1px, transparent 1px),
+	linear-gradient(to bottom, var(--background-color) 1px, transparent 1px);
+	margin: auto;
+	overflow-x: hidden;
+}
+
+.grid-container {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1em;
+	margin: auto;
+	width: 95vw;
+	min-height: 100vh;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	flex: 1;
+	overflow: hidden;
+}
+
+.container img {
+	object-fit: cover;
+	width: inherit;
+	height: inherit;
+	filter: sepia(50%);
+}
+
+.img1 {
+	margin-top: -5em;
+}
+
+.img3 {
+	margin-bottom: 8em;
+}
+
+.img4 {
+	margin-top: 5em;
+}
+
+@media screen and (max-width: 1200px) {
+	.grid-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
