@@ -1,0 +1,26 @@
+.frame {
+	height: 50vh;
+	overflow: none;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.slide {
+	width: 100%;
+	float: left;
+	height: 100%;
+	background-image: url(images/cookie.jpg);
+	background-size: cover;
+	background-position: center;
+	animation: slideshow 10s linear infinite;
+}
+
+@keyframes slideshow {
+	0% { background-image: url(images/cookie.jpg) }
+	33% { background-image: url(images/sandwich.jpg) }
+	66% { background-image: url(images/tea.jpg) }
+	100% { background-image: url(images/cookie.jpg) }
+}
