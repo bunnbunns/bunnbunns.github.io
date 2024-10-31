@@ -40,7 +40,7 @@ body {
 	left: calc(50%);
 	transform: rotate(30deg);
 	transform-origin: 0% 50%;
-	animation: rotatehour 5s linear;
+	animation: rotatehour 10s linear;
 }
 
 #clock>.minute-hand {
@@ -55,7 +55,7 @@ body {
 	left: calc(50%);
 	transform: rotate(-90deg);
 	transform-origin: 0% 50%;
-	animation: rotateminute 5s linear;
+	animation: rotateminute 10s linear;
 }
 
 @keyframes rotateminute {
