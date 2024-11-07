@@ -1,0 +1,96 @@
+body {
+	background-color: #f0ebe2;
+	font-family: sans-serif;
+	color: #2c2e27;
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	padding-bottom: .2em;
+	border-bottom: 2px solid #9ba467;
+}
+
+.body-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.item-container {
+	width: 100%;
+	max-width: 250px;
+	background-color: #fff;
+	padding: 1em;
+	text-align: center;
+	border-radius: 1em;
+	margin: .5em;
+	box-shadow: .1em .1em .4em #9ba467;
+}
+
+.item-container>a.btn {
+	display: inline-block;
+	background-color: #9ba467;
+	color: #fff;
+	text-decoration: none;
+	padding: .5em 1em;
+	border-radius: 1em;
+}
+
+.item-container>p {
+	margin: .5em;
+	font-weight: bold;
+}
+
+.item-container>img {
+	height: 250px;
+	width: 250px;
+}
+
+.mdlbox{
+	background-color: rgba(76, 62, 91, 0.6);
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: .4s opacity;
+}
+
+.bg-orange {
+	background-color: rgba(105, 81, 50, 0.6)
+}
+
+.mdlbox>div{
+	position: relative;
+	background-color: #fff;
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
+	margin-top: 2em;
+	text-align: center;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+.mdlbox:target{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.mdlbox>div>a.close {
+	position: absolute;
+	padding: .5em .6em;
+	color: #dd2929;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.4em;
+	top: 0;
+	right: 0;
+}
