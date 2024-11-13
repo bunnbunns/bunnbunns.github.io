@@ -112,10 +112,11 @@ h2 {
 
 @keyframes slideshow {
 	0% {left:0%}
-	20% {left:-100%}
+	20% {left:0%}
+	40% {left:-100%}
 	50% {left:-100%}
-	60% {left:-200%}
-	90% {left:-200%}
+	70% {left:-200%}
+	95% {left:-200%}
 	100% {left:0%}
 }
 
