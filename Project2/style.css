@@ -29,6 +29,7 @@ img.logo {
 	margin-right: 1em;
 	border-radius: 10px;
 	border: 2px solid var(--green);
+	animation: logo 2s;
 }
 
 h1, h2 {
@@ -56,13 +57,19 @@ h2 {
 }
 
 @keyframes heading {
-	0% {translate: 1em;opacity: 0;}
+	0% {translate: 1.5em;opacity: 0;}
 	100% {translate: 0;opacity: 1;}
 }
 
 @keyframes heading2 {
-	0% {translate: -2em;opacity: 0;}
+	0% {translate: -3em;opacity: 0;}
 	100% {translate: 0;opacity: 1;}
+}
+
+@keyframes logo {
+	0% {scale: 0}
+	50% {scale: 110%}
+	100% {scale: 100%;}
 }
 
 /*** SLIDESHOW ***/
@@ -133,6 +140,7 @@ h2 {
 .hero>.description {
 	position: absolute;
 	background-color: #ffffffa2;
+	font-size: 1.2em;
 	border: 3px solid #fff;
 	top: 35%;
 	width: 42%;
