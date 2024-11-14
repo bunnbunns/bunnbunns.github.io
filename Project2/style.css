@@ -9,7 +9,6 @@ body {
 	background-color: lightyellow;
 	font-family: "Crimson Text", serif;
 	margin: 0;
-	overflow-x: hidden;
 }
 
 img {
@@ -78,15 +77,16 @@ h2 {
 	position: relative;
 	width: 100vw;
 	height: 8vmin;
-	overflow: none;
-	animation: slideshow 25s infinite;
+	overflow: hidden;
 }
 
 .slider {
 	display: flex;
+	position: absolute;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	width: 400%;
+	animation: slideshow 25s infinite;
 }
 
 .slide {
@@ -162,7 +162,8 @@ h2 {
 .image-text {
 	position: relative;
 	background-image: url(images/intro_img1.jpg);
-	height: 40vh;
+	min-height: 450px;
+	max-width: 500px;
 	width: 40%;
 	background-size: cover;
 	background-position: center;
@@ -350,8 +351,10 @@ footer {
 }
 
 .footer-columns {
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1em;
+	padding: 3em 0;
 }
 
 .column {
@@ -359,7 +362,7 @@ footer {
 	flex-direction: column;
 	text-align: center;
 	color: #e0e0e0;
-	padding: 3em;
+	padding: 1em;
 }
 
 .column b {
@@ -386,4 +389,28 @@ footer {
 	text-align: center;
 	color: #979797;
 	font-size: .8em;
+}
+
+@media screen and (max-width: 600px) {
+	.hero>.description {
+		top: 20%;
+	}
+
+	.about {
+		flex-direction: column;
+	}
+	
+	.image-text {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.block-text {
+		width: 100%;
+		max-width: calc(100% - 2em);
+	}
+
+	.footer-columns {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
