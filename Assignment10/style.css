@@ -1,0 +1,11 @@
+.btn-close {
+	position: absolute;
+	font-size: small;
+	filter: invert(1);
+	top: -20px;
+	right: -20px;
+}
+
+.pointer {
+	cursor: pointer;
+}
