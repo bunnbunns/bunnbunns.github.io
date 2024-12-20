@@ -110,6 +110,7 @@ img {
 	width: 24%;
 	text-align: center;
 	padding: 2%;
+	transition: .2s;
 }
 
 .bblue {
@@ -122,6 +123,10 @@ img {
 
 .container14 img {
 	border-radius: 20px;
+}
+
+.container14:hover {
+	background-color: #d1d1d1;
 }
 
 .q15 {
