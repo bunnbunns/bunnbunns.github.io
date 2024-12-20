@@ -9,7 +9,7 @@ if (toastTrigger1) {
   toastTrigger1.addEventListener('click', () => {
 		const qty = document.querySelector('.form1').value
 
-		document.querySelector('.toast-body').textContent=qty + ' orders have been recieved! Your total is: $' + (qty*price).toFixed(2);
+		document.querySelector('.toast-body').textContent=qty + ' orders have been recieved! Your total is: $' + (qty*price).toFixed(2)
     toastBootstrap.show()
   })
 }
@@ -21,7 +21,9 @@ if (toastTrigger2) {
   toastTrigger2.addEventListener('click', () => {
 		const qty = document.querySelector('.form2').value
 
-		document.querySelector('.toast-body').textContent=qty + ' orders have been recieved! Your total is: $' + (qty*price).toFixed(2);
-    toastBootstrap.show()
+		if (qty) {
+			document.querySelector('.toast-body').textContent=qty + ' orders have been recieved! Your total is: $' + (qty*price).toFixed(2)
+    	toastBootstrap.show()
+		}
   })
 }
